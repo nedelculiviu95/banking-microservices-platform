@@ -1,0 +1,66 @@
+// ENV
+package-lock.json
+.angulardoc.json
+.env
+
+// RELEASE
+/includelist.txt
+/excludelist.txt
+release/
+ebam.version
+lz.version
+
+// NODE MODULES
+**/node_modules/
+
+
+// DIST
+packages/**/dist/
+packages/**/target/
+
+// ECLIPSE IDE
+**/.settings
+*.project
+*.classpath
+packages/**/bin/*
+/.metadata/
+
+// IntelliJ IDE
+**/.idea/
+*.iml
+.idea/
+
+// GRADLE (and created by tasks)
+**/.gradle/
+**/build/
+**/out/
+**/dist/
+dist/**
+dockerDist/**
+*.class
+**/src/main/config
+*.tgz
+
+// RUNTIME
+logs/
+
+// UNIT TESTS
+TEST*.xml
+
+
+// MISCELLANEOUS
+packages/Java.code-workspace
+packages/**/.settings/
+*.factorypath
+client-cfg/masif/.install_version
+
+db/.dbeaver/
+tests/test-reports
+
+/reports/
+config/nginx/nginx.conf
+
+_GENERATED_DATA/
+
+// MAC
+*.DS_Store

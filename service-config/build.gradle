@@ -1,0 +1,21 @@
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-config-server'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation project(':lib-shared')
+
+    // both required to connect to H2 database
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-h2console' // need this to see the h2 console in web browser in spring-boot 4.0
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.projectlombok:lombok'
+
+    runtimeOnly 'com.h2database:h2'
+}

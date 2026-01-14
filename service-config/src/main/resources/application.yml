@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: service-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nedelculiviu95/banking-microservices-platform.git
+          search-paths: configs
+          default-label: main
+server:
+  port: 8080

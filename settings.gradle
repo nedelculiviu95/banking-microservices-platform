@@ -1,0 +1,6 @@
+rootProject.name = 'banking-microservices-platform'
+include 'lib-shared'
+include 'anti-fraud-system-app'
+include 'service-config'
+include 'service-discovery'
+
